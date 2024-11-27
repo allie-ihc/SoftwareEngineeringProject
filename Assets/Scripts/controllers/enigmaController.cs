@@ -117,7 +117,7 @@ public class enigmaController : MonoBehaviour
             }
         else if (Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene(SampleScene);
+            //SceneManager.LoadScene(SampleScene);
             /*Singleton.key.augment = 0;
             decoding = !decoding;
             Singleton.originalString = Singleton.encodedString;
