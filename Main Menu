@@ -1,0 +1,17 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class NewBehaviourScript : MonoBehaviour
+{
+    public void goToScene (string scenename)
+    {
+        SceneManager.LoadScene(scenename);
+    }
+
+    public void exitApp()
+    {
+        Application.Quit();
+        Debug.Log("Application has quit");
+    }
+   
+}
