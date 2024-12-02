@@ -19,11 +19,11 @@ public class enigmaController : MonoBehaviour
             Singleton.curr.encodeMessage();
             Singleton.curr.key.augment = 0;
             Singleton.curr.originalString = "";
-            message.text = "Encoded message: " + Singleton.curr.encodedString + "\n decoded as: " + Singleton.curr.originalString;
+            message.text = "\n\tEncoded message: \n\t" + Singleton.curr.encodedString + "\n\t decoded as: \n\t" + Singleton.curr.originalString;
         }
         else
         {
-            message.text = "Your message: " + Singleton.curr.originalString + "\n encoded as: " + Singleton.curr.encodedString;
+            message.text = "\n\tYour message: \n\t" + Singleton.curr.originalString + "\n\t encoded as: \n\t" + Singleton.curr.encodedString;
         }
     }
 
@@ -117,7 +117,7 @@ public class enigmaController : MonoBehaviour
             }
         else if (Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene(SampleScene);
+            //SceneManager.LoadScene(SampleScene);
             /*Singleton.key.augment = 0;
             decoding = !decoding;
             Singleton.originalString = Singleton.encodedString;
@@ -137,14 +137,14 @@ public class enigmaController : MonoBehaviour
             {
                 c = decode(letter);
                 Singleton.curr.originalString += c;
-                message.text = "Encoded message: " + Singleton.curr.encodedString + "\n decoded as: " + Singleton.curr.originalString;
+                message.text = "\n\tEncoded message: \n\t" + Singleton.curr.encodedString + "\n\t decoded as: \n\t" + Singleton.curr.originalString;
             }
             else
             {
                 c = encode(letter);
                 Singleton.curr.originalString += numToChar(letter);
                 Singleton.curr.encodedString += c;
-                message.text = "Your message: " + Singleton.curr.originalString + "\n encoded as: " + Singleton.curr.encodedString;
+                message.text = "\n\tYour message: \n\t" + Singleton.curr.originalString + "\n\t encoded as: \n\t" + Singleton.curr.encodedString;
             }
             
         }
