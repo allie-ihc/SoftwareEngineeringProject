@@ -8,7 +8,7 @@ public class Singleton
         "famously used in world war two",
         "hello my name is inigo montoya you killed my father prepare to die",
         "alan turing cracked the enigma machine",
-        "jesus wept"
+        "jesus wept",
         "originally built by the dutch",
         "you sit on a throne of lies",
         "plugboard rotors reflector and keyboard",
